@@ -118,10 +118,10 @@ const Home: NextPage = () => {
     }
 
     // Do not force login locally for people that don't have auth setup
-    if (session === null && env.NEXT_PUBLIC_FORCE_AUTH) {
-      setShowSignInDialog(true);
-      return;
-    }
+    //if (session === null && env.NEXT_PUBLIC_FORCE_AUTH) {
+    //  setShowSignInDialog(true);
+    //  return;
+    //}
 
     const newAgent = new AutonomousAgent(
       name.trim(),
